@@ -41,9 +41,51 @@ body {
   
 <h1>Services</h1>
   
-<p>Open CMD as admin and look at the image:</p>
+<p>Open CMD as admin and type this:</p>
 
-<img src="installservice.png" alt="Service commands">   
+<p>sc stop DiagTrack</p>
+<p>sc config DiagTrack start= disabled</p>
+<p>sc stop WSearch</p> 
+<p>sc config WSearch start= disabled</p>
+<p>sc stop wuauserv</p> 
+<p>sc config wuauserv start= disabled</p>
+<p>sc stop SysMain</p>
+<p>sc config SysMain start= disabled</p>
+<p>sc stop RetailDemo</p>
+<p>sc config RetailDemo start= disabled</p>
+<p>sc stop RemoteRegisty</p>
+<p>sc config RetailDemo start= disabled</p>
+<p>sc stop Spooler</p>
+<p>sc config Spooler start= disabled</p>
+<p>sc stop WpcMonSvc</p>
+<p>sc config WpcMonSvc start= disabled</p>
+<p>sc stop InstallService</p>
+<p>sc config InstallService start= disabled</p>
+<p>sc stop edgeupdatem</p>
+<p>sc config edgeupdatem start= disabled</p>
+<p>sc stop edgeupdate</p>
+<p>sc config edgeupdatem start= disabled</p>
+<p>sc stop MicrosoftEdgeElevationService</p>
+<p>sc config MicrosoftEdgeElevationService start= disabled</p>
+<p>sc stop lfsvc</p>
+<p>sc config lfsvc start= disabled</p>
+<p>sc stop Fax</p>
+<p>sc config Fax start= disabled</p>
+<p>sc stop DoSvc</p>
+<p>sc config DoSvc start= disabled</p>
+<p>sc config XblAuthManager start= disabled</p>
+<p>sc config XblGameSave start= disabled</p>
+<p>sc config XboxNetApiSvc start= disabled</p>
+<p>sc stop EventLog</p>
+<p>sc config EventLog start= disabled</p>
+<p>sc config Wecsvc start= disabled</p>
+<p>sc config WerSvc start= disabled</p>
+<p>sc config WalletService start= disabled</p>
+<p>sc config wisvc start= disabled</p>
+<p>sc stop LicenseManager</p>
+<p>sc config LicenseManager start= disabled</p>
+<p>sc config TabletInputService start= disabled</p>
+<p>sc config PrintNotify start= disabled</p>
 
 <p>This will disable most services.</p>
 
@@ -60,19 +102,19 @@ body {
   
 <p>To remove Microsoft Edge, make sure that CMD is opened as admin and type this:</p>
 
-cd %userprofile%\AppData\Local\Microsoft
-taskkill /f /im msedge.exe
-taskkill /f /im MicrosoftEdgeUpdate.exe
-rmdir /s /q "Edge"
-rmdir /s /q "EdgeCore"
-rmdir /s /q "EdgeUpdate"
-cd "C:\Program Files (x86)\Microsoft\"
-rmdir /s /q "Edge"
-rmdir /s /q "EdgeCore"
-rmdir /s /q "EdgeUpdate"
-reg delete "HKLM\SOFTWARE\Microsoft\Edge" /f   
-reg delete "HKLM\SOFTWARE\Microsoft\EdgeUpdate" /f 
-reg delete "HKLM\SOFTWARE\Microsoft\EdgeCore" /f 
+<p>cd %userprofile%\AppData\Local\Microsoft</p>
+<p>taskkill /f /im msedge.exe</p>
+<p>taskkill /f /im MicrosoftEdgeUpdate.exe</p>
+<p>rmdir /s /q "Edge"</p>
+<p>rmdir /s /q "EdgeCore"</p>
+<p>rmdir /s /q "EdgeUpdate"</p>
+<p>cd "C:\Program Files (x86)\Microsoft\"</p>
+<p>rmdir /s /q "Edge"</p>
+<p>rmdir /s /q "EdgeCore"</p>
+<p>rmdir /s /q "EdgeUpdate"</p>
+<p>reg delete "HKLM\SOFTWARE\Microsoft\Edge" /f</p>
+<p>reg delete "HKLM\SOFTWARE\Microsoft\EdgeUpdate" /f</p>
+<p>reg delete "HKLM\SOFTWARE\Microsoft\EdgeCore" /f</p>
 
 <p>Once done, Microsoft Edge is removed.</p>
   
