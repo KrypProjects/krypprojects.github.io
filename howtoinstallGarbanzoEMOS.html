@@ -20,6 +20,77 @@ body {
 
 <h1>Getting started</h1>
 
+<p>Easy install:</p>
+<p>Get the latest release(s) at:</p>
+<p>https://github.com/KrypProjects/GarbanzoEMOS/releases/tag/0.1</p>
+
+<p>----------------------</p>
+  
+<p>Non-easy install:</p>
+<p>If you want install it manual, OK. but you only need TrackerDisable.reg, oldfetch.cmd and theme.</p>
+
+<p>----------------------</p>
+
+<h1>Registry (.REG)</h1>
+
+<p>Make sure that you have downloaded 'TrackerDisable.reg'</p>
+
+<p>Open the 'TrackerDisable.reg' file and click 'Yes' to change the registry.</p>
+  
+<p>----------------------</p>
+  
+<h1>Services</h1>
+  
+<p>Open CMD as admin and look at the image:</p>
+
+<img width="376" height="780" alt="Services command" src="https://github.com/user-attachments/assets/aa7cfc7e-700e-4c5d-b65a-0ab8f36c3df0" />
+
+<p>This will disable most services.</p>
+
+<p>----------------------</p>
+
+<h1>Registry (.REG)</h1>
+
+<p>Make sure that you have downloaded 'TrackerDisable.reg'</p>
+  
+<h1>Full remove</h1>
+<p>If you don't want to remove Microsoft Edge, then skip this step and move on to the next step.</p>
+  
+<p>To remove Microsoft Edge, make sure that CMD is opened as admin and type this:</p>
+
+cd %userprofile%\AppData\Local\Microsoft
+taskkill /f /im msedge.exe
+taskkill /f /im MicrosoftEdgeUpdate.exe
+rmdir /s /q "Edge"
+rmdir /s /q "EdgeCore"
+rmdir /s /q "EdgeUpdate"
+cd "C:\Program Files (x86)\Microsoft\"
+rmdir /s /q "Edge"
+rmdir /s /q "EdgeCore"
+rmdir /s /q "EdgeUpdate"
+reg delete "HKLM\SOFTWARE\Microsoft\Edge" /f   
+reg delete "HKLM\SOFTWARE\Microsoft\EdgeUpdate" /f 
+reg delete "HKLM\SOFTWARE\Microsoft\EdgeCore" /f 
+
+<p>Once done, Microsoft Edge is removed.</p>
+  
+<p>----------------------</p>
+
+<h1>Applying theme</h1>
+<p>Make sure that you have downloaded the '.deskthemepack' file on https://github.com/KrypProjects/GarbanzoEMOS/tree/main/Theme</p>
+<p>Open the '.deskthemepack' file and... poof, theme applyed!</p>
+
+<p>----------------------</p>
+
+<h1>Moving oldfetch.cmd to C:\Windows</h1>
+<p>If you have a oldfetch.cmd downloadeed, move it to C:\Windows and thats it.</p>
+
+<p>----------------------</p>
+  
+<h1>Finsh the install</h1>
+<p>Now that you are done installing GarbanzoEMOS, reboot your computer to take effect and finsh the installtion!</p>
+
+<p>----------------------</p>
   
 </body>
 </html>
