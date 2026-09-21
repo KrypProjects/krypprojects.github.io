@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="icon.png" type="image/png">
+<title>KrypProjects - GarbanzoEMOS Installtion</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h1>Welcome to GarbanzoEMOS installtion</h1>
+
+<p>GarbanzoEMOS is a custom Windows version installer that is similar to old ones, but better with removing bit of a bloat.</p>
+
+<p>For fully debloating, here are these searches links (with Brave Search):</p>
+
+<p>https://search.brave.com/search?q=How+to+debloat+Windows+11</p>
+
+<p>https://search.brave.com/search?q=How+to+debloat+Windows+11+quickly</p>
+
+<p>https://search.brave.com/search?q=How+to+debloat+Windows+11+for+gaming</p>
+  
+<p>----------------------</p>
+
+<h1>👌Getting started</h1>
+
+<p>✅Supported Windows versions: </p>
+  
+<p>ℹ️Windows 10 20H2 to 22H2, Windows 10/11 LTSC, Windows 11 21H2 to newer</p>
+
+<p>ℹ️This is for 64-bit only.</p>
+  
+<p>❌Some Windows versions are outdated</p>
+
+<p>----------------------</p>
+  
+<p>🏎️Easy install:</p>
+<form action="https://github.com/KrypProjects/GarbanzoEMOS/releases" method="get">
+  <button type="submit">Go to the releases on GitHub</button>
+</form>   
+
+<p>ℹ️Run every .CMD files as admin.</p>
+  
+<p>----------------------</p>
+  
+<p>🐢Non-easy install:</p>
+<p>⚠️If you want install it manual, OK. but you only need these things:</p>
+
+<form action="https://github.com/KrypProjects/GarbanzoEMOS/blob/main/TrackerDisable.reg" method="get">
+  <button type="submit">🚀Registry (.REG)</button>
+</form>   
+
+<form action="https://github.com/KrypProjects/GarbanzoEMOS/blob/main/oldfetch.cmd" method="get">
+  <button type="submit">🚀OldFetch (.CMD)</button>
+</form>   
+
+<form action="https://github.com/KrypProjects/GarbanzoEMOS/blob/main/Theme/Theme.deskthemepack" method="get">
+  <button type="submit">🚀Theme (.DESKTHEMEPACK)</button>
+</form>   
+
+<p>----------------------</p>
+
+<h1>🚀Registry (.REG)</h1>
+
+<p>ℹ️Make sure that you have downloaded 'TrackerDisable.reg'</p>
+
+<p>ℹ️Open the 'TrackerDisable.reg' file and click 'Yes' to change the registry.</p>
+  
+<p>----------------------</p>
+  
+<h1>🚀Services</h1>
+  
+<p>ℹ️Open CMD as admin and type this:</p>
+
+<p>sc stop DiagTrack</p>
+<p>sc config DiagTrack start= disabled</p>
+<p>sc stop WSearch</p> 
+<p>sc config WSearch start= disabled</p>
+<p>sc stop wuauserv</p> 
+<p>sc config wuauserv start= disabled</p>
+<p>sc stop SysMain</p>
+<p>sc config SysMain start= disabled</p>
+<p>sc stop RetailDemo</p>
+<p>sc config RetailDemo start= disabled</p>
+<p>sc stop RemoteRegisty</p>
+<p>sc config RetailDemo start= disabled</p>
+<p>sc stop Spooler</p>
+<p>sc config Spooler start= disabled</p>
+<p>sc stop WpcMonSvc</p>
+<p>sc config WpcMonSvc start= disabled</p>
+<p>sc stop InstallService</p>
+<p>sc config InstallService start= disabled</p>
+<p>sc stop edgeupdatem</p>
+<p>sc config edgeupdatem start= disabled</p>
+<p>sc stop edgeupdate</p>
+<p>sc config edgeupdatem start= disabled</p>
+<p>sc stop MicrosoftEdgeElevationService</p>
+<p>sc config MicrosoftEdgeElevationService start= disabled</p>
+<p>sc stop lfsvc</p>
+<p>sc config lfsvc start= disabled</p>
+<p>sc stop Fax</p>
+<p>sc config Fax start= disabled</p>
+<p>sc stop DoSvc</p>
+<p>sc config DoSvc start= disabled</p>
+<p>sc config XblAuthManager start= disabled</p>
+<p>sc config XblGameSave start= disabled</p>
+<p>sc config XboxNetApiSvc start= disabled</p>
+<p>sc stop EventLog</p>
+<p>sc config EventLog start= disabled</p>
+<p>sc config Wecsvc start= disabled</p>
+<p>sc config WerSvc start= disabled</p>
+<p>sc config WalletService start= disabled</p>
+<p>sc config wisvc start= disabled</p>
+<p>sc stop LicenseManager</p>
+<p>sc config LicenseManager start= disabled</p>
+<p>sc config TabletInputService start= disabled</p>
+<p>sc config PrintNotify start= disabled</p>
+
+<p>This will disable most services.</p>
+
+<p>----------------------</p>
+  
+<h1>🚀Remove Microsoft Edge</h1>
+<p>ℹ️If you don't want to remove Microsoft Edge, then skip this step and move on to the next step.</p>
+  
+<p>To remove Microsoft Edge, make sure that CMD is opened as admin and type this:</p>
+
+<p>cd %userprofile%\AppData\Local\Microsoft</p>
+<p>taskkill /f /im msedge.exe</p>
+<p>taskkill /f /im MicrosoftEdgeUpdate.exe</p>
+<p>rmdir /s /q "Edge"</p>
+<p>rmdir /s /q "EdgeCore"</p>
+<p>rmdir /s /q "EdgeUpdate"</p>
+<p>cd "C:\Program Files (x86)\Microsoft\"</p>
+<p>rmdir /s /q "Edge"</p>
+<p>rmdir /s /q "EdgeCore"</p>
+<p>rmdir /s /q "EdgeUpdate"</p>
+<p>reg delete "HKLM\SOFTWARE\Microsoft\Edge" /f</p>
+<p>reg delete "HKLM\SOFTWARE\Microsoft\EdgeUpdate" /f</p>
+<p>reg delete "HKLM\SOFTWARE\Microsoft\EdgeCore" /f</p>
+
+<p>Once done, Microsoft Edge is removed.</p>
+  
+<p>----------------------</p>
+
+<h1>🚀Applying theme</h1>
+<p>Make sure that you have downloaded the '.deskthemepack' file on https://github.com/KrypProjects/GarbanzoEMOS/tree/main/Theme</p>
+<p>Open the '.deskthemepack' file and... poof, theme applyed!</p>
+
+<p>----------------------</p>
+
+<h1>🚀Moving oldfetch.cmd to C:\Windows</h1>
+<p>If you have a oldfetch.cmd downloadeed, move it to C:\Windows and thats it.</p>
+
+<p>----------------------</p>
+  
+<h1>✅Finsh the install</h1>
+<p>Now that you are done installing GarbanzoEMOS, reboot your computer to take effect and finsh the installtion!</p>
+
+<p>----------------------</p>
+  
+</body>
+</html>
