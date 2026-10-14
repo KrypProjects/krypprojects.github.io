@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="https://krypprojects.github.io/icon.png" type="image/png">
+<title>KrypProjects - hinnkaDistro Installtion</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
 
+<h1>Welcome to hinnkaDistro installtion</h1>
+
+<p>hinnkaDistro is a minimal and lightweight linux distribution based with Arch Linux.</p>
+  
+<p>----------------------</p>
+
+<h1>👌Getting started</h1>
+  
+<p>ℹ️This is for fresh installed Arch Linux system and must be a chroot</p>
+
+<p>----------------------</p>
+
+<p>ℹ️You must install git on chroot because there is not installed by default</p>
+
+<p>'pacman -Sy git'</p>
+
+<h1>If installed, type 'git clone https://github.com/81bx/hinnkaDistroCLI'</h1>
+
+<p>If cloned, type 'cd hinnkaDistroCLI' and 'sh auto.sh'</p>
+
+<p>If done, type 'sh <package>.sh' to get least packages on new system.</p>
+
+<p>For example:</p>
+
+<p>'sh fastfetch.sh && sh firefox.sh && sh i3.sh'</p>
+
+<p>ℹ️Note that 'i3.sh' has SDDM and NetworkManager
+
+<p>----------------------</p>
+
+<p>Now, type 'cd airootfs' and do this (as root):</p>
+
+<p>'cp -r etc / && cp -r usr /'</p>
+
+<p>ℹ️Before doing next step, remove 'hinnkaDistroCLI' folder on root (/)</p>
+
+<p>'rm -rf /hinnkaDistroCLI'
+  
+<p>And then, type 'su - <USERNAME>'</p>
+
+<p>ℹ️Replace "<USERNAME>" to put your user you just created.</p>
+
+<p>Once you in as a user, you must clone 'hinnkaDistroCLI' again:</p>
+
+<h1>'git clone https://github.com/81bx/hinnkaDistroCLI'</h1>
+
+<p>Then type these:</p>
+
+<p>'sudo mkdir ~/.config'</p>
+
+<p>'cd ~/hinnkaDistroCLI/airootfs/config/'</p>
+  
+<p>'sudo cp -r fastfetch ~/.config'</p>
+
+<h1>✅Finsh the install</h1>
+  
+<p>🚀Once done, type 'exit' to logout, and type 'exit' again to leave chroot.</hp>
+
+<p>ℹ️You have finshed installing hinnkaDistro! Type 'reboot' to restart the system.</p>
+  
+<p>----------------------</p>
+  
+</body>
+</html>
